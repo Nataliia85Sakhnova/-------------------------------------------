@@ -21,12 +21,12 @@
                     <legend style="color:rgb(91, 65, 150);">Имена</legend>
                     <div>
                         <label for="petsname">Кличка</label>
-                        <input type="text" id="petsname" />
+                        <input type="text" id="petsname" required />
                     </div>
 
                     <div>
                         <label for="ownername">Имя и контакты владельца</label>
-                        <input type="text" id="ownername" />
+                        <input type="text" id="ownername" required />
                     </div>
                 </fieldset>
             </div>
@@ -34,7 +34,7 @@
             <fieldset style="background-color: rgba(254, 255, 240, 0.493);">
                 <div>
                     <label for="breed" style="color:rgb(226, 80, 43);">Какой породы Ваш питомец?</label>
-                    <select id='breed'>
+                    <select id='breed' required>
                         <option value="1">Мейнкун</option>
                         <option value="2">Сиамский</option>
                         <option value="3">Сфинкс</option>
@@ -77,7 +77,8 @@
                     <label for="button">Кнопка сохранить</label>
                     <input type="button" id='button' value="agree and save" /></div>
                 <div>Нажимая кнопку "Зарегистрироваться":
-                    <input type="checkbox" />Я принимаю условия <a href="...">Пользовательское соглашение</a></div>
+                    <input type="checkbox" required />Я принимаю условия<a href="...">Пользовательское соглашение</a>
+                </div>
             </fieldset>
 
         </form>
