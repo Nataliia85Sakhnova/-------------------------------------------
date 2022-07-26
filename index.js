@@ -4,7 +4,7 @@ const ValidName = (nameField) => {
         console.log(nameField.value)
         return true;
     } else {
-        alert("Еще раз проверьте!");
+        document.getElementById('container').innerHTML = 'Проверьте правильность введенного имени';
         console.log("Валидация завалена! Иди переписывай!")
         return false;
     }
@@ -16,9 +16,5 @@ const CallValidName = () => {
 }
 
 
-// сначала eventlistener, а в нем вызов
-// eventlistener  - событие клика по кнопке запускает действие функции,
-// которая проверяет валидацию полей формы.
 
-// element.addEventListener("click", validName)
 
