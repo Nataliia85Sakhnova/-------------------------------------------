@@ -1,14 +1,20 @@
-const validName = (nameField) => {
+const ValidName = (nameField) => {
     const nameFormat = /^[a-zA-Zа-яёА-ЯЁ]+$/u;
     if (nameField.value.match(nameFormat)) {
         console.log(nameField.value)
         return true;
     } else {
         alert("Еще раз проверьте!");
-        console.log("Валидация завалена! Иди переделывай!")
+        console.log("Валидация завалена! Иди переписывай!")
         return false;
     }
 }
+
+const CallValidName = () => {
+    ValidNamedocument.getElementById("petsname");
+    ValidNamedocument.getElementById("ownername");
+}
+
 
 // сначала eventlistener, а в нем вызов
 // eventlistener  - событие клика по кнопке запускает действие функции,
