@@ -1,4 +1,5 @@
 const ValidName = (nameField) => {
+    console.log(`it works`)
     const nameFormat = /^[a-zA-Zа-яёА-ЯЁ]+$/u;
     if (nameField.value.match(nameFormat)) {
         console.log(nameField.value)
@@ -11,10 +12,12 @@ const ValidName = (nameField) => {
 }
 
 const CallValidName = () => {
-    ValidNamedocument.getElementById("petsname");
-    ValidNamedocument.getElementById("ownername");
+    console.log(`it works as well`)
+    ValidName(document.getElementById("petsname"));
+    ValidName(document.getElementById("ownername"));
 }
 
+button.addEventListener(`click`, CallValidName);
 
-
-
+// index.js:16  ValidName.getElementById is not a function
+// at HTMLButtonElement.CallValidName (index.js:16:15)
