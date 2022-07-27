@@ -19,5 +19,5 @@ const CallValidName = () => {
 
 button.addEventListener(`click`, CallValidName);
 
-// index.js:16  ValidName.getElementById is not a function
-// at HTMLButtonElement.CallValidName (index.js:16:15)
+// <FORM NAME="form" onSubmit="return Complete();">
+// <BUTTON TYPE="submit">Готово</BUTTON>
