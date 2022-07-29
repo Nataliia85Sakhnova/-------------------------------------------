@@ -1,4 +1,4 @@
-const ValidName = (nameField) => {
+const validName = (nameField) => {
     console.log(`it works`)
     const nameFormat = /^[a-zA-Zа-яёА-ЯЁ]+$/u;
     if (nameField.value.match(nameFormat)) {
@@ -12,13 +12,24 @@ const ValidName = (nameField) => {
     }
 }
 
-const CallValidName = () => {
-    console.log(`it works as well`)
-    ValidName(document.getElementById("petsname"));
-    ValidName(document.getElementById("ownername"));
+const validCheckBox = (input) => {
+    console.log("Че б сожрать?")
+    // тут напишем крутую функцию, которая будет проверять
+    // что как мимимум 1 из чекбоксов выбран
+    //я хз как это делать
+    // вот прям совсем
+    // но кто мешает мечтать
+    document.getElementById('container2').innerHTML = 'Должен быть выбран как минимум 1 пункт';
 }
 
-button.addEventListener(`click`, CallValidName);
+const callValidName = () => {
+    console.log(`it works as well`)
+    validName(document.getElementById("petsname"));
+    validName(document.getElementById("ownername"));
+    validCheckBox();
+}
+
+button.addEventListener(`click`, callValidName);
 
 // событие остановка отправки формы на сервер js ("event.preventDefault()")
 // если не прошло валидация - то  форма не отправляется и выводится сообщение
