@@ -19,5 +19,5 @@ const CallValidName = () => {
 
 button.addEventListener(`click`, CallValidName);
 
-// <FORM NAME="form" onSubmit="return Complete();">
-// <BUTTON TYPE="submit">Готово</BUTTON>
+// событие остановка отправки формы на сервер js ("event.preventDefault()")
+// если не прошло валидация - то  форма не отправляется и выводится сообщение

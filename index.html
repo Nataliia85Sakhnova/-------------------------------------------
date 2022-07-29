@@ -11,7 +11,8 @@
 
 
 
-
+<!-- onSubmit="return false" -->
+<!-- action="script.php" method="POST" -->
 
 
 <body>
@@ -19,7 +20,7 @@
     <div>
         <h1 style="color: brown;">Регистрация для любителей котиков</h1>
 
-        <form action="script.php" method="POST">
+        <form name="form">
 
             <div style="background-color: rgba(206, 240, 240, 0.623);">
                 <fieldset>
@@ -70,17 +71,15 @@
             <fieldset style="background-color: rgba(128, 255, 0, 0.247);">
                 <div>
                     <label style="color:rgb(226, 80, 43);">Самец или самка</label>
-                    <br />Самец<input type="radio" name="sex" />
+                    <br />Самец<input type="radio" name="sex" checked />
                     <br />Самка<input type="radio" name="sex" />
                     <br /><img src="boy_and_girl_cats.jpeg" style="width: 25vw;" alt="Мальчик_или_девочка">
                 </div>
             </fieldset>
-
+            <button id="button" type="submit">Отправить</button>
         </form>
     </div>
 
-
-    <button id="button">Отправить</button>
     <script src="index.js"></script>
 </body>
 
