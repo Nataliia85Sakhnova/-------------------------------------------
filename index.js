@@ -5,8 +5,9 @@ const ValidName = (nameField) => {
         console.log(nameField.value)
         return true;
     } else {
-        document.getElementById('container').innerHTML = 'Проверьте правильность введенного имени';
         console.log("Валидация завалена! Иди переписывай!")
+        // ("event.preventDefault()")стандартный метод отмены действия браузера
+        document.getElementById('container').innerHTML = 'Проверьте правильность введенного имени';
         return false;
     }
 }

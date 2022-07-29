@@ -22,6 +22,7 @@
 
         <form name="form">
 
+            <!-- Имена -->
             <div style="background-color: rgba(206, 240, 240, 0.623);">
                 <fieldset>
                     <legend style="color:rgb(91, 65, 150);">Имена</legend>
@@ -35,13 +36,14 @@
                         <input type="text" id="ownername" required />
                     </div>
 
-                    <p id="container"></p>
+                    <p id="container" style="color:red"></p>
                 </fieldset>
             </div>
 
+            <!-- Порода -->
             <fieldset style="background-color: rgba(254, 255, 240, 0.493);">
                 <div>
-                    <label for="breed" style="color:rgb(226, 80, 43);">Какой породы Ваш
+                    <label for="breed" style="color:rgb(71, 16, 2);">Какой породы Ваш
                         питомец?</label>
                     <select id='breed' required>
                         <option value="1">Мейнкун</option>
@@ -53,9 +55,10 @@
                     </select></div>
             </fieldset>
 
+            <!-- Чем питается -->
             <fieldset style="background-color: rgba(137, 43, 226, 0.226);">
                 <div>
-                    <label style="color:rgb(226, 80, 43);">Чем питается</label>
+                    <label style="color:rgb(70, 19, 6);">Чем питается</label>
                     <br />Сухой корм<input type="checkbox" name="food" />
                     <br />Мясо и рыба<input type="checkbox" name="food" />
                     <br />Ест с нашего стола. Вилка в левой, нож в правой.<input type="checkbox" name="food" />
@@ -68,9 +71,10 @@
                 </div>
             </fieldset>
 
+            <!-- Самец или самка -->
             <fieldset style="background-color: rgba(128, 255, 0, 0.247);">
                 <div>
-                    <label style="color:rgb(226, 80, 43);">Самец или самка</label>
+                    <label style="color:rgb(52, 13, 3);">Самец или самка</label>
                     <br />Самец<input type="radio" name="sex" checked />
                     <br />Самка<input type="radio" name="sex" />
                     <br /><img src="boy_and_girl_cats.jpeg" style="width: 25vw;" alt="Мальчик_или_девочка">
