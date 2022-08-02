@@ -14,6 +14,7 @@ const validName = (nameField) => {
 
 const validCheckBox = (input) => {
     console.log("Че б сожрать?")
+    // [document.querySelectorAll(`input[type=checkbox]`)].some(el=>el.checked)
     // тут напишем крутую функцию, которая будет проверять
     // что как мимимум 1 из чекбоксов выбран
     //я хз как это делать
