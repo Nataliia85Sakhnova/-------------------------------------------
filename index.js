@@ -12,16 +12,37 @@ const validName = (nameField) => {
     }
 }
 
+
+
+let inputs = document.querySelectorAll(".checkbox-cat-food"); //получаем все инпуты
+// console.log(inputs[0].checked);
+// console.log(inputs[1].checked);
+// console.dir(document);
+
+let a = 0;
+
 const validCheckBox = (input) => {
-    console.log("Че б сожрать?")
-    // [document.querySelectorAll(`input[type=checkbox]`)].some(el=>el.checked)
-    // тут напишем крутую функцию, которая будет проверять
-    // что как мимимум 1 из чекбоксов выбран
-    //я хз как это делать
-    // вот прям совсем
-    // но кто мешает мечтать
-    document.getElementById('container2').innerHTML = 'Должен быть выбран как минимум 1 пункт';
+    if (input.checked == true){
+        a++
+    }
 }
+
+for (let input of inputs) { //перебираем их и на каждый вызываем функцию валидации
+    validCheckBox(input);
+}
+console.log(a);
+
+if (a==0){
+    document.getElementById('container2').innerHTML = 'Должен быть выбран как минимум 1 пункт';
+    //надпись должна появляться по клику на кнопку, написать функцию
+}
+
+
+
+    // document.querySelectorAll(`.checkbox-cat-food`).checkbox-cat-food
+    // [document.querySelectorAll(`input[type=checkbox]`)].some(el=>el.checked)
+
+
 
 const callValidName = () => {
     console.log(`it works as well`)
